@@ -20,7 +20,6 @@ public class HandleMessages extends HttpServlet
   public void init() throws ServletException
   {
     super.init();
-    System.out.println("Test");
     String rootPath = getServletContext().getRealPath("/");
     mu = new MessagesUtil(rootPath);
   }
