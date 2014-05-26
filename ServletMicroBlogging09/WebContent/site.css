@@ -1,0 +1,33 @@
+.button {
+    background-color:#5441fc;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+    color:#e8fff0;
+    font-family:Calibri, Arial;
+    font-size:15px;
+    font-weight:bold;
+    width:100px;
+}
+
+body {
+    font-family:Calibri, Arial;
+    font-size:15px;
+}
+
+p {
+  width: 500px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px;
+}
+
+p:nth-of-type(odd) {
+  background-color: #CCCCCC;
+}
+
+p:nth-of-type(even) {
+  background-color: #AAAAFF;
+}

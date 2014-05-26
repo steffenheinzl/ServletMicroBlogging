@@ -1,0 +1,34 @@
+<!-- TODO Entfernen Sie die Tags <html></html>, den gesamten <head> und die Tags <body> </body>, 
+damit ein Server-Side-Include möglich ist. -->
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="site.css" />
+</head>
+<body>
+  Was möchtest Du tun?
+  <ul>
+    <li>Einloggen als:
+      <form action="Login" method="post">
+        Benutzername: <input type="text" name="user" /> 
+        <input class="button" type="submit" value="Absenden" />
+      </form>
+      <br />
+    </li>
+    <li>Nachricht versenden
+      <form action="HandleMessages" method="post">
+        Ihre Nachricht: <input type="text" name="message" size="130" />
+        <input class="button" type="submit" value="Absenden" />
+      </form>
+      <br />
+    </li>
+    <!-- TODO Entfernen Sie den Listeneintrag, der es ermöglicht, die Nachrichten eines beliebigen Nutzers abzufragen! -->
+    <li>Von einem Benutzer Nachrichten abrufen:
+      <form action="ShowUserMessages" method="get">
+        Benutzername: <input type="text" name="user" />
+        <input class="button" type="submit" value="Absenden" />
+      </form>
+      <br />
+    </li>
+  </ul>
+</body>
+</html>
