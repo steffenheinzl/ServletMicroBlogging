@@ -21,7 +21,6 @@ public class HandleMessages extends HttpServlet
   {
     super.init();
     String rootPath = getServletContext().getRealPath("/");
-    System.out.println("Test!");
     mu = new MessagesUtil(rootPath);
   }
 
