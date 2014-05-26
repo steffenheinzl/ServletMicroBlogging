@@ -30,7 +30,7 @@ public class HandleMessages extends HttpServlet
     List<String> messages = mu.readMessages(); //reads all messages from file
     //TODO: Gib alle Nachrichten in einer HTML Seite zurück. Jede Nachricht soll in einem eigenen Paragraph <p> stehen
   }
-
+  
   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
   {
     //TODO: Lese den Parameter message vom request aus und ergänze ihn als Aufrufparameter von postMessage
