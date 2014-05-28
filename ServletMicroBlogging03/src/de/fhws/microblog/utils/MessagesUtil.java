@@ -23,7 +23,6 @@ public class MessagesUtil
 
   public MessagesUtil(String rootPath)
   {
-    //TODO: Pfad anpassen
     pathToMessages = new File(rootPath + "/messages.txt");
     try
     {
