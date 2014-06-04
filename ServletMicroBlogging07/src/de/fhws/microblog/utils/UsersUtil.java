@@ -38,6 +38,8 @@ public class UsersUtil
   private UsersUtil(String rootPath)
   {
     this.rootPath = rootPath;
+    File folder = new File(rootPath + "/users/");
+    if (!folder.exists()) folder.mkdir();
     pathToUsers = rootPath + "/users.txt";
     try
     {

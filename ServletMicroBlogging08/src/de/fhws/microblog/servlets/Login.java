@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/Login")
 public class Login extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	  
+	  //TODO
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -19,7 +19,7 @@ public class Login extends HttpServlet {
 	  if (user == null) response.getWriter().append("<html><body>Login failed! No user provided!</body></html>");
       HttpSession session = request.getSession();
       session.setAttribute("user", user);
-      String redirectURL = response.encodeRedirectURL("index.html");
+      String redirectURL = response.encodeRedirectURL("list.html");
       response.sendRedirect(redirectURL);
 	}
 

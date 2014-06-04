@@ -26,7 +26,7 @@ public class LoginFilter implements Filter {
 	    //Hinweise: Der Benutzer ist nicht eingeloggt, wenn es noch keine Session gibt.
 	    //          Die HTTP Methode kann über req.getMethod abgefragt werden.
 	    
-        //block user and redirect to LoginServlet
+        //block user and redirect to login page
         String redirectURL = resp.encodeRedirectURL("Login");
         resp.sendRedirect(redirectURL);
         

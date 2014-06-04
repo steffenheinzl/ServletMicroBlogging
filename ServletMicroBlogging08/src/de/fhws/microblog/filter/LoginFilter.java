@@ -26,9 +26,9 @@ public class LoginFilter implements Filter {
 	    //if HTTP Post is used and session does not exist
 	    if (req.getMethod().equalsIgnoreCase("POST") && (session == null)) 
         {
-          //block user and redirect to LoginServlet
+          //block user and redirect to login page
           HttpServletResponse resp = (HttpServletResponse) response;
-          String redirectURL = resp.encodeRedirectURL("Login");
+          String redirectURL = resp.encodeRedirectURL("list.html");
           resp.sendRedirect(redirectURL);
         }
         else chain.doFilter(request, response);

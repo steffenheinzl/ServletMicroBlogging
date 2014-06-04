@@ -43,7 +43,7 @@ public class HandleMessages extends HttpServlet
   {
     String message = request.getParameter("message");
     mu.postMessage(message); //writes message to file
-    String redirectURL = response.encodeRedirectURL("index.html");
+    String redirectURL = response.encodeRedirectURL("list.html");
     response.sendRedirect(redirectURL);
   }
 }
