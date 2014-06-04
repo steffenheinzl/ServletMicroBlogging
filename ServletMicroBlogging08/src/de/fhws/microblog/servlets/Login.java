@@ -19,7 +19,7 @@ public class Login extends HttpServlet {
 	  if (user == null) response.getWriter().append("<html><body>Login failed! No user provided!</body></html>");
       HttpSession session = request.getSession();
       session.setAttribute("user", user);
-      String redirectURL = response.encodeRedirectURL("list.html");
+      String redirectURL = response.encodeRedirectURL("index.html");
       response.sendRedirect(redirectURL);
 	}
 
