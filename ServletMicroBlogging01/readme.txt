@@ -1,8 +1,12 @@
-Das Projekt muss als .war File exportiert werden. 
+Bei ServletMicroBlogging handelt es sich um einen Twitter-ähnlichen MicroBlogging Dienst.
+Das Projekt besteht momentan aus einem Servlet, das unter der URL HandleMessages erreichbar ist.
+Das Servlet HandleMessages kann einen Parameter message entgegennehmen und diesen verarbeiten.
+Sie brauchen das Servlet nicht zu kennen; die Schnittstelle genügt.
+
+Ihre Aufgabe ist es, die HTML-Datei postmessage.html so zu vervollständigen, 
+dass ein Client eine Nachricht an das Servlet schicken kann! 
+
+
+WICHTIG:
+Das Projekt wird nur als .war File zur Verfügung gestellt. 
 Es sollen lediglich die class-files des Servlets im Projekt enthalten sein. 
-Nur die Schnittstelle zum Servlet ist bekannt:
-Das Servlet ist unter der URL HandleMessages mit der Methode POST erreichbar
-
-Komplettieren Sie die HTML-Datei postmessage.html!
-
-Suchen Sie nach den TODOs im Projekt und erledigen Sie diese!
